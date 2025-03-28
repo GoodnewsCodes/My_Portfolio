@@ -24,13 +24,13 @@ This is a personal portfolio website for Goodnews Anwana, a software developer s
 - Google Fonts (Poppins and Segoe UI)
 
 ## Project Structure
-The website is a single HTML file with embedded CSS & JavaScript for simplicity. All styling is contained within the `<style>` tags and scripting is done in he `<script>` tags in the document head.
+The website is a single HTML file with embedded CSS & JavaScript for simplicity. All styling is contained within the `<style>` tags and scripting is done in the `<script>` tags in the document head.
 
 ## How to Use
 1. Open the `index.html` file in any modern web browser
 2. Navigate through the different sections using the navigation bar
 3. Click on project links to view them on GitHub
-4. Use contact links to reach out via email or social platforms
+4. Use contact links to reach out to me via email or social platforms
 
 ## Customization
 To customize this portfolio for your own use:
