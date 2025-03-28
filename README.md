@@ -19,6 +19,7 @@ This is a personal portfolio website for Goodnews Anwana, a software developer s
 ## Technologies Used
 - HTML5
 - CSS3 (with CSS variables for theming)
+- JavaScript
 - Font Awesome icons
 - Google Fonts (Poppins and Segoe UI)
 
