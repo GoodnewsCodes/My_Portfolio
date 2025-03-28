@@ -40,7 +40,7 @@
         
         /* Navigation */
         nav {
-            background: rgba(18, 18, 18, 0.9);
+            background: rgba(18, 18, 18, 0.788);
             padding: 1.5rem 2rem;
             position: sticky;
             top: 0;
@@ -195,6 +195,7 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
+            
             width: 100%; /* Ensure full width of grid cell */
             max-width: 350px; /* Match the max in grid-template-columns */
         }
@@ -206,7 +207,7 @@
         }
 
         .project-content {
-            padding: 1.5rem;
+            padding: 2rem;
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -215,8 +216,8 @@
       
         .project h3 {
             color: var(--primary);
-            margin-bottom: 0.5rem;
-            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            font-size: 1.5rem;
             text-align: center;
         }
         
@@ -245,6 +246,23 @@
         .project-link i {
             margin-left: 0.5rem;
             transition: var(--transition);
+            color: var(--primary-light);
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .tech-tag {
+            background: rgba(255, 87, 51, 0.2);
+            color: var(--primary);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
         }
         
         /* Skills Section */
@@ -262,11 +280,16 @@
             background: linear-gradient(135deg, var(--dark-gray), var(--black));
             color: var(--primary);
             padding: 0.5rem 1.5rem;
-            border-radius: 12px;
-            font-size: 1.1rem;
+            border-radius: 10px;
+            font-size: 1rem;
             font-weight: 600;
             box-shadow: var(--shadow);
             transition: var(--transition);
+        }
+
+        .skill:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 5px var(--primary-dark);
         }
         
         
@@ -378,18 +401,34 @@
                 <div class="project">
                     <div class="project-content">
                         <h3>JAV Project📱</h3>
-                        <p>A Flutter application that takes Attendance in a University demonstrating useful functionalities with clean architecture and modern design patterns.</p>
-                        <a href="https://github.com/GoodnewsCodes/jav-project" target="_blank" class="project-link">
+                        <p>A Flutter App that takes Attendance in a University with multiple functionalities built with clean architecture and modern design patterns.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                        <a href="#" target="_blank" class="project-link">
                             View on GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#" class="project-link">
+                            Live Demo <i class="fas fa-external-link-alt"></i>
                         </a>
                     </div>
                 </div>
                 <div class="project">
                     <div class="project-content">
-                        <h3>Number Guessing Game 🎮</h3>
-                        <p>A simple Python game where the player guesses a random number between 1 and 9.</p>
+                        <h3>Guessing Game 🎮</h3>
+                        <p>A simple Python game where players guesses a random number between 1 and 9. Features include input validation and score tracking.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Game</span>
+                        </div>
                         <a href="https://github.com/GoodnewsCodes/Number_Guessing_Game" target="_blank" class="project-link">
                             View on GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#" class="project-link">
+                            Live Demo <i class="fas fa-external-link-alt"></i>
                         </a>
                     </div>
                 </div>
@@ -443,5 +482,24 @@
     <footer>
         <p>&copy; 2025 Goodnews Anwana. All rights reserved.</p>
     </footer>
+    <script>
+    // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+                
+                // Update URL without reloading
+                history.pushState(null, null, targetId);
+            });
+        });
+    </script>
 </body>
 </html>
