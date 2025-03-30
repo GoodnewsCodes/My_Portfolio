@@ -163,7 +163,7 @@
         
         p {
             max-width: 700px;
-            margin: 0 auto 2rem;
+            margin: 0 auto 1.5rem;
             color: rgba(255, 255, 255, 0.8);
             text-align: center;
         }
@@ -323,22 +323,6 @@
             transition: transform 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
             will-change: transform;
             backface-visibility: hidden;
-        }
-
-
-   .carousel-item {
-            max-width: 500px;
-            max-height: 350px;
-            min-width: 100%;
-            background: var(--dark-gray);
-            border-radius: 10px;
-            box-shadow: var(--shadow);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            justify-content: center;
-            transition: all 0.4s ease, opacity 0.6s ease;
-            opacity: 0.9;
-            transform: scale(0.98);
-            will-change: transform, opacity;
         }
 
 
@@ -556,19 +540,72 @@
         
         }
         @media (max-width: 480px) {
+            nav {
+                padding: 1rem;
+                position: fixed;
+                /* bottom: 0; */
+                top: auto;
+                background: #7c26150c;
+            }
+
+            nav ul {
+                gap: 0.5rem;
+            }
+
+            nav a {
+                font-size: 0.95rem;
+                padding: 0.3rem 0.6rem;
+            }
+
+            /* Home Section */
+            #home {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h4 {
+                font-size: 0.95rem;
+            }
+
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+
+            /* Projects Carousel */
+            .carousel-container {
+                width: 100%;
+                padding: 0;
+            }
+
             .carousel-controls {
-                gap: 0.5rem; /* Smaller gap on very small screens */
+                gap: 0.8rem; /* Smaller gap on very small screens */
             }
 
             .carousel-item {
                 min-width: 100% ;
                 padding: 1rem;
             }
+
+            .carousel-inner {
+                max-height: fit-content;
+                padding: 0;
+            }
             
             .project-link {
                 padding: 0.5rem 0.8rem; /* More compact links */
                 font-size: 0.9rem;
             }
+
+            /*  */
         }
     </style>
 </head>
