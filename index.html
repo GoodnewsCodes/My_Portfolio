@@ -175,13 +175,13 @@
         /* Projects Section */
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 350px)); /* Changed to auto-fit with max width */
-            justify-content: center; /* Center the grid columns */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+            justify-content: center;
             gap: 2rem;
-            margin: 2rem auto 0; /* Center the grid container */
+            margin: 2rem auto 0;
             width: 100%;
             max-width: 1100px;
-            justify-items: center; /* Center items within their cells */
+            justify-items: center;
         }
 
         .project {
@@ -195,9 +195,8 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
-            
-            width: 100%; /* Ensure full width of grid cell */
-            max-width: 350px; /* Match the max in grid-template-columns */
+            width: 100%;
+            max-width: 350px;
         }
 
         .project:hover {
@@ -298,17 +297,14 @@
             box-shadow: 0 1px 3px var(--primary-dark);
         }
 
-
-
-
         /* Carousel Styles */
         .carousel-container {
             max-width: 600px;
-            width: calc(100% - 30px); /* Accounts for padding */
+            width: calc(100% - 30px);
             margin: 2rem auto;
             position: relative;
             perspective: 1000px;
-            padding: 0 15px; /* Added padding */
+            padding: 0 15px;
         }
 
         .carousel {
@@ -325,11 +321,10 @@
             backface-visibility: hidden;
         }
 
-
         .carousel-item {
             min-width: 100%;
             width: 100%;
-            padding: 1.5rem; /* Added consistent padding */
+            padding: 1.5rem;
             background: var(--dark-gray);
             border-radius: 10px;
             box-shadow: var(--shadow);
@@ -338,7 +333,7 @@
             opacity: 0.9;
             transform: scale(0.98);
             will-change: transform, opacity;
-            box-sizing: border-box; /* Include padding in width */
+            box-sizing: border-box;
         }
 
         .carousel-item.active {
@@ -361,12 +356,12 @@
         }
 
         .project h3 {
-            font-size: clamp(1.2rem, 4vw, 1.5rem); /* Responsive font size */
+            font-size: clamp(1.2rem, 4vw, 1.5rem);
             margin-bottom: 1rem;
         }
 
         .project p {
-            font-size: clamp(0.9rem, 3vw, 1rem); /* Responsive font size */
+            font-size: clamp(0.9rem, 3vw, 1rem);
             margin-bottom: 1.5rem;
         }
 
@@ -429,7 +424,6 @@
             box-shadow: 0 0 10px rgba(255, 87, 51, 0.7);
         } 
         
-        
         /* Contact Section */
         .contact-links {
             display: flex;
@@ -484,7 +478,6 @@
             animation: fadeIn 0.8s ease forwards;
         }
 
-
         /* Responsive Design */
         @media (max-width: 768px) {
             nav ul {
@@ -519,31 +512,28 @@
             }
 
             .carousel-container {
-                width: calc(100% - 20px); /* Slightly less padding on mobile */
+                width: calc(100% - 20px);
                 padding: 0 10px;
             }
  
             .carousel-button {
                 width: 40px;
-                height: 40px; /* Smaller buttons on mobile */
+                height: 40px;
             }
 
             .indicator {
                 width: 12px;
-                height: 12px; /* Smaller indicators */
+                height: 12px;
             }
 
             .project-content {
                 padding: 0.5rem;
             }
-
-        
         }
         @media (max-width: 480px) {
             nav {
                 padding: 1rem;
                 position: fixed;
-                /* bottom: 0; */
                 top: auto;
                 background: #7c26150c;
             }
@@ -557,7 +547,6 @@
                 padding: 0.3rem 0.6rem;
             }
 
-            /* Home Section */
             #home {
                 padding-top: 3rem;
                 padding-bottom: 3rem;
@@ -580,14 +569,13 @@
                 height: 150px;
             }
 
-            /* Projects Carousel */
             .carousel-container {
                 width: 100%;
                 padding: 0;
             }
 
             .carousel-controls {
-                gap: 0.8rem; /* Smaller gap on very small screens */
+                gap: 0.8rem;
             }
 
             .carousel-item {
@@ -601,7 +589,7 @@
             }
             
             .project-link {
-                padding: 0.5rem 0.8rem; /* More compact links */
+                padding: 0.5rem 0.8rem;
                 font-size: 0.9rem;
             }
 
@@ -626,7 +614,7 @@
             <h1>Goodnews Anwana</h1>
             <img src="https://github.com/GoodnewsCodes.png" alt="Profile Photo" class="profile-img">
             <h2>Software Developer</h2>
-            <h4>I build innovative software solutions that automate tasks and solve real-world problems. Passionate about creating efficient, scalable applications with clean code.</h4>
+            <h4>I build innovative software solutions with focus on healthcare technology.</h4>
         </section>
 
         <section id="skills">
@@ -651,6 +639,8 @@
                     </svg> Dart
                 </span>
                 <span class="skill"><i class="fas fa-fire"></i> Firebase</span>
+                <span class="skill"><i class="fas fa-hospital"></i> Healthcare IT</span>
+                <span class="skill"><i class="fas fa-money-bill-wave"></i> Revenue Optimization</span>
             </div>
         </section>
 
@@ -661,7 +651,23 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="project-content">
-                                <h3>JAV Project📱</h3>
+                                <h3>HealthSync HMS 🏥</h3>
+                                <p>An exclusive Hospital Management Software to streamline clinic operations with flawless EHR and inventory management.
+                                    Currently in development for a leading Nigerian healthcare provider.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Flutter</span>
+                                    <span class="tech-tag">Dart</span>
+                                    <span class="tech-tag">Firebase</span>
+                                </div>
+                                <a href="#" class="project-link">
+                                    (Coming Soon) <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+        
+                        <div class="carousel-item">
+                            <div class="project-content">
+                                <h3>JAV Attendnce App📱</h3>
                                 <p>A Flutter App that takes Attendance in a University with multiple functionalities built with clean architecture and modern design patterns.</p>
                                 <div class="project-tech">
                                     <span class="tech-tag">Flutter</span>
@@ -670,26 +676,6 @@
                                 </div>
                                 <a href="#" target="_blank" class="project-link">
                                     View on GitHub <i class="fas fa-arrow-right"></i>
-                                </a>
-                                <a href="#" class="project-link">
-                                    Live Demo <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-        
-                        <div class="carousel-item">
-                            <div class="project-content">
-                                <h3>Simple Calculator App 🧮</h3>
-                                <p>A Python-based command-line calculator that performs basic arithmetic operations: addition, subtraction, multiplication, and division of Two Numbers.</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">Python</span>
-                                    <span class="tech-tag">Game</span>
-                                </div>
-                                <a href="https://github.com/GoodnewsCodes/Python_Calculator" target="_blank" class="project-link">
-                                    View on GitHub <i class="fas fa-arrow-right"></i>
-                                </a>
-                                <a href="#" class="project-link">
-                                    Live Demo <i class="fas fa-external-link-alt"></i>
                                 </a>
                             </div>
                         </div>
@@ -704,9 +690,6 @@
                                 </div>
                                 <a href="https://github.com/GoodnewsCodes/Number_Guessing_Game" target="_blank" class="project-link">
                                     View on GitHub <i class="fas fa-arrow-right"></i>
-                                </a>
-                                <a href="#" class="project-link">
-                                    Live Demo <i class="fas fa-external-link-alt"></i>
                                 </a>
                             </div>
                         </div>
@@ -745,13 +728,11 @@
                 </a>
             </div>
         </section>
-
     </div>
     
     <footer>
         <p>&copy; 2025 Goodnews Anwana. All rights reserved.</p>
     </footer>
-
 
     <script>
     // Smooth scrolling for navigation links
@@ -782,7 +763,7 @@
                 
                 let currentIndex = 0;
                 let intervalId;
-                const intervalTime = 3000; // 5 seconds
+                const intervalTime = 3000;
                 let isAnimating = false;
                 const animationDuration = 600;
 
@@ -790,20 +771,16 @@
                     if (isAnimating) return;
                     isAnimating = true;
                     
-                    // Update active class for fade effect
                     items.forEach((item, index) => {
                         item.classList.toggle('active', index === currentIndex);
                     });
                     
-                    // Smooth transform
                     carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
                     
-                    // Update indicators
                     indicators.forEach((indicator, index) => {
                         indicator.classList.toggle('active', index === currentIndex);
                     });
                     
-                    // Reset animation flag after transition completes
                     setTimeout(() => {
                         isAnimating = false;
                     }, animationDuration);
@@ -831,7 +808,6 @@
                     }, intervalTime);
                 }
 
-                // Event listeners
                 nextBtn.addEventListener('click', () => {
                     nextSlide();
                     startAutoSlide();
@@ -849,7 +825,6 @@
                     });
                 });
 
-                // Touch support for mobile
                 let touchStartX = 0;
                 let touchEndX = 0;
                 
@@ -864,26 +839,23 @@
 
                 function handleSwipe() {
                     const difference = touchStartX - touchEndX;
-                    if (difference > 50) { // Swipe left
+                    if (difference > 50) {
                         nextSlide();
-                    } else if (difference < -50) { // Swipe right
+                    } else if (difference < -50) {
                         prevSlide();
                     }
                     startAutoSlide();
                 }
 
-                // Pause on hover
                 carousel.addEventListener('mouseenter', () => {
                     clearInterval(intervalId);
                 });
 
                 carousel.addEventListener('mouseleave', startAutoSlide);
 
-                // Initialize
                 updateCarousel();
                 startAutoSlide();
                 
-                // Handle window resize
                 window.addEventListener('resize', () => {
                     carousel.style.transition = 'none';
                     carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
